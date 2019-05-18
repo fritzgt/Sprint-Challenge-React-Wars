@@ -9,13 +9,7 @@
 
 /* write your parent styles in here for your App.js */
 
-.cards {
-  background-color: white;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  margin: 10px auto;
-  border-radius: 10px;
-  text-align: left;
-  padding-left: 20px;
+.App {
+  max-width: 670px;
+  margin: 0 auto;
 }

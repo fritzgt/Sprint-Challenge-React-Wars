@@ -1,17 +1,15 @@
 import React from "react";
+import Characters from "./Characters";
+import "./StarWars.css";
 
 // A list of Star Wars Characters rendered to the screen.
 
 const StarWars = props => {
   return (
-    <div className="cards">
-      <h3>{props.propsCharacter.name}</h3>
-      <p>
-        <strong>Gender: </strong> {props.propsCharacter.gender}
-      </p>
-      <p>
-        <strong>HomeWorld: </strong> {props.propsCharacter.homeworld}
-      </p>
+    <div className="card-container">
+      {props.propsCrew.map(characters => (
+        <Characters propsCharacter={characters} />
+      ))}
     </div>
   );
 };
