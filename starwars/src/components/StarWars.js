@@ -7,8 +7,8 @@ import "./StarWars.css";
 const StarWars = props => {
   return (
     <div className="card-container">
-      {props.propsCrew.map(characters => (
-        <Characters propsCharacter={characters} />
+      {props.starwarsChars.map(characters => (
+        <Characters propsCharacter={characters} key={characters.created} />
       ))}
     </div>
   );
