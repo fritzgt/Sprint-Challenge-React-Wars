@@ -4,10 +4,13 @@ import React from "react";
 
 const StarWars = props => {
   return (
-    <div>
+    <div className="cards">
       <h3>{props.propsCharacter.name}</h3>
       <p>
         <strong>Gender: </strong> {props.propsCharacter.gender}
+      </p>
+      <p>
+        <strong>HomeWorld: </strong> {props.propsCharacter.homeworld}
       </p>
     </div>
   );
